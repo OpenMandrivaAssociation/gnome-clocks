@@ -19,6 +19,7 @@ BuildRequires:	pkgconfig(libnotify) >= -.7.0
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(geoclue-2.0)
 BuildRequires:	pkgconfig(geocode-glib-1.0)
+BuildRequires:	pkgconfig(gsound)
 BuildRequires:	vala-tools
 BuildRequires:	libxml2-utils
 BuildRequires:	itstool
