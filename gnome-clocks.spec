@@ -2,17 +2,26 @@
 
 Summary:	Clocks applications for GNOME
 Name:		gnome-clocks
-Version:	 3.16.1
+Version:	3.16.1
 Release:	2
 License:	GPLv2+
 Group:		Development/Other
 URL:		http://live.gnome.org/Clocks
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
-BuildArch:	noarch
-
 BuildRequires:	intltool
-BuildRequires:	python-setuptools
-BuildRequires:	pythonegg(python-distutils-extra)
+Buildrequires:	pkgconfig(gio-2.0) >= 2.30.0
+BuildRequires:	pkgconfig(glib-2.0) >= 2.36
+BuildRequires:	pkgconfig(gtk+-3.0) >= 3.9.11
+BuildRequires:	pkgconfig(libcanberra) >= 0.30
+BuildRequires:	pkgconfig(gweather-3.0) >= 3.9.3
+BuildRequires:	pkgconfig(gnome-desktop-3.0) >= 3.7.90
+BuildRequires:	pkgconfig(libnotify) >= -.7.0
+BuildRequires:	pkgconfig(gobject-introspection-1.0)
+BuildRequires:	pkgconfig(geoclue-2.0)
+BuildRequires:	pkgconfig(geocode-glib-1.0)
+BuildRequires:	vala-tools
+BuildRequires:	libxml2-utils
+BuildRequires:	itstool
 
 %description
 Clock application designed for GNOME 3.
@@ -21,14 +30,21 @@ Clock application designed for GNOME 3.
 %setup -q
 
 %build
-python setup.py build
+%configure
+%make
 
 %install
-python setup.py install --skip-build --root=%{buildroot}
+%makeinstall_std
+
+%find_lang %{name} --with-help
 
 %files
 %doc COPYING README NEWS
-%{python_sitelib}/*
 %{_bindir}/%{name}
-%{_datadir}/%{name}/
-
+%{_datadir}/%{name}
+%{_datadir}/appdata/%{busname}.appdata.xml
+%{_iconsdir}/*/*/apps/*.png
+%{_datadir}/applications/%{busname}.desktop
+%{_datadir}/glib-2.0/schemas/%{busname}.gschema.xml
+%{_datadir}/dbus-1/services/%{busname}.service
+%{_datadir}/gnome-shell/search-providers/org.gnome.clocks.search-provider.ini
