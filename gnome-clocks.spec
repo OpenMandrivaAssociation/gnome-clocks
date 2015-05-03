@@ -1,4 +1,5 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
+%define busname org.gnome.clocks
 
 Summary:	Clocks applications for GNOME
 Name:		gnome-clocks
@@ -37,14 +38,15 @@ Clock application designed for GNOME 3.
 %install
 %makeinstall_std
 
-%find_lang %{name} --with-help
+%find_lang %{name} --with-gnome
 
-%files
+%files -f %{name}.lang
 %doc COPYING README NEWS
 %{_bindir}/%{name}
 %{_datadir}/%{name}
 %{_datadir}/appdata/%{busname}.appdata.xml
 %{_iconsdir}/*/*/apps/*.png
+%{_iconsdir}/hicolor/symbolic/apps/gnome-clocks-symbolic.svg
 %{_datadir}/applications/%{busname}.desktop
 %{_datadir}/glib-2.0/schemas/%{busname}.gschema.xml
 %{_datadir}/dbus-1/services/%{busname}.service
