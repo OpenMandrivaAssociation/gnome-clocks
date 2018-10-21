@@ -5,8 +5,8 @@
 
 Summary:	Clocks applications for GNOME
 Name:		gnome-clocks
-Version:	3.18.0
-Release:	2
+Version:	3.30.1
+Release:	1
 License:	GPLv2+
 Group:		Development/Other
 URL:		http://live.gnome.org/Clocks
@@ -26,6 +26,8 @@ BuildRequires:	pkgconfig(gsound)
 BuildRequires:	vala-tools
 BuildRequires:	libxml2-utils
 BuildRequires:	itstool
+BuildRequires:	meson
+
 
 %description
 Clock application designed for GNOME 3.
@@ -34,11 +36,14 @@ Clock application designed for GNOME 3.
 %setup -q
 
 %build
-%configure
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
+
+%find_lang %{name} --with-gnome
+
 
 %find_lang %{name} --with-gnome
 
@@ -46,9 +51,9 @@ Clock application designed for GNOME 3.
 %doc COPYING README NEWS
 %{_bindir}/%{name}
 %{_datadir}/%{name}
-%{_datadir}/appdata/%{busname}.appdata.xml
+%{_datadir}/metainfo/%{busname}.appdata.xml
 %{_iconsdir}/*/*/apps/*.png
-%{_iconsdir}/hicolor/symbolic/apps/gnome-clocks-symbolic.svg
+%{_iconsdir}/hicolor/symbolic/apps/org.gnome.clocks-symbolic.svg
 %{_datadir}/applications/%{busname}.desktop
 %{_datadir}/glib-2.0/schemas/%{busname}.gschema.xml
 %{_datadir}/dbus-1/services/%{busname}.service
