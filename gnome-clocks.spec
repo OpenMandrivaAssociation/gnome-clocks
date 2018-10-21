@@ -53,7 +53,7 @@ Clock application designed for GNOME 3.
 %{_datadir}/%{name}
 %{_datadir}/metainfo/%{busname}.appdata.xml
 %{_iconsdir}/*/*/apps/*.png
-#{_iconsdir}/hicolor/symbolic/apps/gnome-clocks-symbolic.svg
+%{_iconsdir}/hicolor/symbolic/apps/org.gnome.clocks-symbolic.svg
 %{_datadir}/applications/%{busname}.desktop
 %{_datadir}/glib-2.0/schemas/%{busname}.gschema.xml
 %{_datadir}/dbus-1/services/%{busname}.service
