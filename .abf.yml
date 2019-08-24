@@ -1,5 +1,2 @@
-removed_sources:
-  gnome-clocks-3.16.1.tar.xz: a4b7ffdf87535565c094422377415650135f1a89
-  gnome-clocks-3.18.0.tar.xz: ed265d06e08032c2bf5bede14f89c6df5504acf0
 sources:
-  gnome-clocks-3.30.1.tar.xz: d6283f57f61e29bcb3dc3a68f048f098049a65ab
+  gnome-clocks-3.32.0.tar.xz: 31e1f35dda62400e2ba05ca3dfa239c97707d383
