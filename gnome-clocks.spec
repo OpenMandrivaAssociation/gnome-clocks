@@ -5,7 +5,7 @@
 
 Summary:	Clocks applications for GNOME
 Name:		gnome-clocks
-Version:	3.30.1
+Version:	3.32.0
 Release:	1
 License:	GPLv2+
 Group:		Development/Other
@@ -52,8 +52,7 @@ Clock application designed for GNOME 3.
 %{_bindir}/%{name}
 %{_datadir}/%{name}
 %{_datadir}/metainfo/%{busname}.appdata.xml
-%{_iconsdir}/*/*/apps/*.png
-%{_iconsdir}/hicolor/symbolic/apps/org.gnome.clocks-symbolic.svg
+%{_iconsdir}/*/*/apps/*.*
 %{_datadir}/applications/%{busname}.desktop
 %{_datadir}/glib-2.0/schemas/%{busname}.gschema.xml
 %{_datadir}/dbus-1/services/%{busname}.service
