@@ -48,7 +48,7 @@ Clock application designed for GNOME 3.
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
-%doc COPYING README NEWS
+%doc COPYING README.md NEWS
 %{_bindir}/%{name}
 %{_datadir}/%{name}
 %{_datadir}/metainfo/%{busname}.appdata.xml
