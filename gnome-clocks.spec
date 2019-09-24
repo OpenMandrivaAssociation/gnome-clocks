@@ -50,7 +50,7 @@ Clock application designed for GNOME 3.
 %files -f %{name}.lang
 %doc COPYING README.md NEWS
 %{_bindir}/%{name}
-%{_datadir}/%{name}
+#{_datadir}/%{name}
 %{_datadir}/metainfo/%{busname}.appdata.xml
 %{_iconsdir}/*/*/apps/*.*
 %{_datadir}/applications/%{busname}.desktop
