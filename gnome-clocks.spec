@@ -12,7 +12,7 @@ Group:		Development/Other
 URL:		http://live.gnome.org/Clocks
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	intltool
-Buildrequires:	pkgconfig(gio-2.0) >= 2.30.0
+BuildRequires:	pkgconfig(gio-2.0) >= 2.30.0
 BuildRequires:	pkgconfig(glib-2.0) >= 2.36
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.9.11
 BuildRequires:	pkgconfig(libcanberra) >= 0.30
