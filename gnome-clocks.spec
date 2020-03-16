@@ -52,7 +52,7 @@ Clock application designed for GNOME 3.
 %doc README.md
 %{_bindir}/%{name}
 #{_datadir}/%{name}
-#{_datadir}/metainfo/%{busname}.appdata.xml
+%{_datadir}/metainfo/org.gnome.clocks.metainfo.xml
 %{_iconsdir}/*/*/apps/*.*
 %{_datadir}/applications/%{busname}.desktop
 %{_datadir}/glib-2.0/schemas/%{busname}.gschema.xml
