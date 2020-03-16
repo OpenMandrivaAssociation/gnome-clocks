@@ -49,10 +49,10 @@ Clock application designed for GNOME 3.
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
-%doc COPYING README.md NEWS
+%doc README.md
 %{_bindir}/%{name}
 #{_datadir}/%{name}
-%{_datadir}/metainfo/%{busname}.appdata.xml
+#{_datadir}/metainfo/%{busname}.appdata.xml
 %{_iconsdir}/*/*/apps/*.*
 %{_datadir}/applications/%{busname}.desktop
 %{_datadir}/glib-2.0/schemas/%{busname}.gschema.xml
