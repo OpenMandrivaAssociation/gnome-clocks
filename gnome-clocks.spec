@@ -5,7 +5,7 @@
 
 Summary:	Clocks applications for GNOME
 Name:		gnome-clocks
-Version:	3.36.2
+Version:	3.38.0
 Release:	1
 License:	GPLv2+
 Group:		Development/Other
@@ -16,7 +16,7 @@ BuildRequires:	pkgconfig(gio-2.0) >= 2.30.0
 BuildRequires:	pkgconfig(glib-2.0) >= 2.36
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.9.11
 BuildRequires:	pkgconfig(libcanberra) >= 0.30
-BuildRequires:  pkgconfig(libhandy-0.0)
+BuildRequires:  pkgconfig(libhandy-1)
 BuildRequires:	pkgconfig(gweather-3.0) >= 3.9.3
 BuildRequires:	pkgconfig(gnome-desktop-3.0) >= 3.7.90
 BuildRequires:	pkgconfig(libnotify) >= -.7.0
