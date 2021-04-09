@@ -5,7 +5,7 @@
 
 Summary:	Clocks applications for GNOME
 Name:		gnome-clocks
-Version:	3.38.0
+Version:	40.0
 Release:	1
 License:	GPLv2+
 Group:		Development/Other
