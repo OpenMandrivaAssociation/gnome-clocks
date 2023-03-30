@@ -3,6 +3,8 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 %define busname org.gnome.clocks
 
+%global optflags %{optflags} -Wno-incompatible-function-pointer-types
+
 Summary:	Clocks applications for GNOME
 Name:		gnome-clocks
 Version:	44.0
