@@ -7,12 +7,12 @@
 
 Summary:	Clocks applications for GNOME
 Name:		gnome-clocks
-Version:	44.0
-Release:	2
+Version:	45.0
+Release:	1
 License:	GPLv2+
 Group:		Development/Other
-URL:		http://live.gnome.org/Clocks
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+URL:		https://live.gnome.org/Clocks
+Source0:	https://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(gio-2.0) >= 2.30.0
 BuildRequires:	pkgconfig(glib-2.0) >= 2.36
