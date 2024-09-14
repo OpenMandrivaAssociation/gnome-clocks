@@ -8,7 +8,7 @@
 Summary:	Clocks applications for GNOME
 Name:		gnome-clocks
 Version:	46.0
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Development/Other
 URL:		https://live.gnome.org/Clocks
