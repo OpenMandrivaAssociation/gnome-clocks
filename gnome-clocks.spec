@@ -14,6 +14,7 @@ Group:		Development/Other
 URL:		https://live.gnome.org/Clocks
 Source0:	https://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	intltool
+BuildRequires:  desktop-file-utils
 BuildRequires:	pkgconfig(gio-2.0) >= 2.30.0
 BuildRequires:	pkgconfig(glib-2.0) >= 2.36
 BuildRequires:	pkgconfig(gtk4)
