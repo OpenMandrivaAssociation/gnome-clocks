@@ -33,6 +33,7 @@ BuildRequires:	vala-tools
 BuildRequires:	libxml2-utils >= 2.15.2
 BuildRequires:	itstool
 BuildRequires:	meson
+BuildRequires:  vorbis-tools
 
 
 %description
