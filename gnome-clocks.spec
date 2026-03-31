@@ -63,3 +63,4 @@ Clock application designed for GNOME 3.
 %{_datadir}/glib-2.0/schemas/%{busname}.gschema.xml
 %{_datadir}/dbus-1/services/%{busname}.service
 %{_datadir}/gnome-shell/search-providers/org.gnome.clocks.search-provider.ini
+%{_datadir}/sounds/gnome/default/alarms/
