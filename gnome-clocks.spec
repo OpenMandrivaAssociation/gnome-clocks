@@ -7,7 +7,7 @@
 
 Summary:	Clocks applications for GNOME
 Name:		gnome-clocks
-Version:	49.0
+Version:	50.0
 Release:	1
 License:	GPLv2+
 Group:		Development/Other
@@ -30,7 +30,7 @@ BuildRequires:	pkgconfig(geoclue-2.0)
 BuildRequires:	pkgconfig(geocode-glib-2.0)
 BuildRequires:	pkgconfig(gsound)
 BuildRequires:	vala-tools
-BuildRequires:	libxml2-utils
+BuildRequires:	libxml2-utils >= 2.15.2
 BuildRequires:	itstool
 BuildRequires:	meson
 
